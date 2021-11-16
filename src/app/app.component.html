@@ -1,0 +1,26 @@
+
+  <div class="container">
+    <div class="card text-center">
+      
+      <div class="alert alert-dark card-header" role="alert">
+        
+        <b> Iniciar Sesión </b>
+  </div>
+  <div class="card-body p-5">
+
+    <label style="float: left;">Email</label>
+    <input class="form-control bd-highlight p-2" type="email" placeholder="Ingrese su Email" [(ngModel)]="usuario.Email">
+
+    <label style="float: left;">Contraseña</label>
+    <input class="form-control bd-highlight p-2" type="Contrasena" placeholder="Ingrese su Contraseña"[(ngModel)]="usuario.Contrasena">
+
+    <button class="btn btn-outline-primary bd-highlight m-3" (click)="Ingresar()">Ingresar</button>
+    <button class="btn btn-outline-info btn-block bd-highlight p-2" (click)="IngresarConGoogle()">Ingresar con Google</button>
+    <label>Aun no tienes cuenta? <a href="#">Registrarse</a></label>
+  </div>
+           <button class="btn btn-outline-primary bd-highlight m-3"(click)="Logout()">Logout</button>
+    <div>
+       
+    </div>
+  </div>
+</div>
